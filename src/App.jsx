@@ -23,7 +23,7 @@ class IssueFilter extends React.Component {
 
 
 function IssueRow(props) {
-  const issue = this.props.issue;
+  const issue = props.issue;
 
   return(
       <tr>
@@ -40,7 +40,8 @@ function IssueRow(props) {
 
 function IssueTable(props) {
 
-  const issueRows = this.props.issues.map(issue => <IssueRow key={issue.id} issue={issue} />);
+  const issueRows = props.issues.map(issue => <IssueRow key={issue.id} issue={issue} />);
+  
   return (
       <table className="bordered-table">
           <thead>
@@ -134,5 +135,6 @@ class IssueList extends React.Component {
 }
 
 const element = <IssueList />;
+
 
 ReactDOM.render(element, document.getElementById('contents'));
