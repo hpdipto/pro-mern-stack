@@ -1,0 +1,35 @@
+{
+  "name": "pro_mern_stack_ui",
+  "version": "1.0.0",
+  "description": "Practising Code from the Book: Pro MERN Stack",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -w uiserver.js -w .env uiserver.js",
+    "compile": "babel src --out-dir public",
+    "watch": "babel src --out-dir public --watch --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hpdipto/pro-mern-stack.git"
+  },
+  "keywords": [
+    "mern"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hpdipto/pro-mern-stack/issues"
+  },
+  "homepage": "https://github.com/hpdipto/pro-mern-stack#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.4",
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.10.4"
+  }
+}
